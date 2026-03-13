@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: vuln-backend
+    restart: always
+    expose:
+      - "8000"
+    volumes:
+      - ./backend/data:/app/data
+    environment:
+      - PORT=8000
+    networks:
+      - app-network
+
+  frontend:
+    build: ./frontend
+    container_name: vuln-frontend
+    restart: always
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

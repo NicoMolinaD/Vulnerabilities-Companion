@@ -1,0 +1,33 @@
+## Entorno Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+## Node / Frontend
+frontend/node_modules/
+frontend/dist/
+
+## Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+## Logs y temporales
+*.log
+*.log.*
+*.tmp
+*.swp
+*.swo
+
+## Archivos de sistema
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+## Artefactos de build / docker
+*.tar
+*.gz
+*.zip
+
