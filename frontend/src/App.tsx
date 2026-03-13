@@ -1076,7 +1076,7 @@ function App() {
       <div className="app-container">
         <header className="header">
           <h1>🔐 Comparador de Vulnerabilidades</h1>
-          <p className="header-author">Autoría total de Nicolás Molina Díaz | Systems Engineer.</p>
+          <p className="header-author">Aguas De Cartagena Vulnerabilities Companion</p>
           <p>Compara escaneos nuevos contra registros históricos</p>
         </header>
 
@@ -1290,6 +1290,7 @@ function App() {
 
       <footer className="footer">
         <p>Comparador de Vulnerabilidades v1.2 • Sin almacenamiento de datos</p>
+        <p>By Nicolás Molina Díaz</p>
       </footer>
     </>
   )
