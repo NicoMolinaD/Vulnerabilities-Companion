@@ -19,7 +19,7 @@ services:
     container_name: vuln-frontend
     restart: always
     ports:
-      - "80:80"
+      - "10.3.11.101:11555:80"
     depends_on:
       - backend
     networks:
